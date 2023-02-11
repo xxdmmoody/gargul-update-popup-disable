@@ -21,10 +21,11 @@ This is very easy to implement and can be done in a few seconds, but I am not sm
 ```
 4. Open \Gargul\Classes\Version.lua
 5. Copy this if statement below:
-6. ```
+```
 if (GL.Settings:get("noUpdatePopup")) then
   return;
-end```
+end
+```
             
 7. In the function named "Version:notifyOfUpdate", modify the local function notifyUpdate by adding the if statement you just copied into the middle of the function as shown below:
 ```
