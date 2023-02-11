@@ -1,3 +1,6 @@
+-- Replace the existing file in Gargul\Classes
+-- I am not the author of this code, I am not claiming to be the author, I am making no money or otherwise benefitting from this in any way
+-- I am not affiliated with Gargul and this code is not associated or endorsed by the author of Gargul
 local _, GL = ...;
 
 ---@class Version
