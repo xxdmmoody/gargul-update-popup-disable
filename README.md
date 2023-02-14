@@ -1,4 +1,7 @@
 # gargul-update-popup-disable
+
+THIS IS NOT A VERSION OF GARGUL I DID NOT WRITE GARGUL I AM NOT THE AUTHOR OF GARGUL (BUT IF I WAS I WOULDNT BE A JERK TO USERS OF THE ADDON LMAO)
+
 Repository for the code that disables the Gargul addon's "update Gargul!" notification that pops up in the center of the screen and lingers for way too long.
 
 This code works with Gargul version 5.3.1
