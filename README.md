@@ -9,6 +9,8 @@ This code works with Gargul version 5.3.1
 **I did not write Gargul, I do not own Gargul and I am not affiliated with Gargul or the authors of the addon in any way at all.**
 **That being said, I did write the ~6 lines of code below all by myself like a big boy**
 
+This is intended to be a set of instructions on how to modify your version of Gargul, please do not attempt to use this to copy and redistribute your own version of the addon, that takes time, money and resources away from the developer of the original addon.
+
 I tried to ask the author of the addon to put this simple fix into the addon but they very clearly (and rudely) stated that this is not something they want to implement despite it being a super simple fix requested multiple times by many people, so I wanted to make it available for anyone else that is annoyed by the popup whenever it happens.
 
 This is very easy to implement and can be done in a few seconds, but I am not smart enough to figure out how to do this automatically any time the addon updates. 
