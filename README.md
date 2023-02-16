@@ -1,6 +1,6 @@
 # gargul-update-popup-disable
 
-THIS IS NOT A VERSION OF GARGUL I DID NOT WRITE GARGUL I AM NOT THE AUTHOR OF GARGUL (BUT IF I WAS I WOULDNT BE A JERK TO USERS OF THE ADDON LMAO)
+THIS IS NOT A VERSION OF GARGUL I DID NOT WRITE GARGUL I AM NOT THE AUTHOR OF GARGUL
 
 Repository for the code that disables the Gargul addon's "update Gargul!" notification that pops up in the center of the screen and lingers for way too long.
 
@@ -13,7 +13,7 @@ I tried to ask the author of the addon to put this simple fix into the addon but
 
 This is very easy to implement and can be done in a few seconds, but I am not smart enough to figure out how to do this automatically any time the addon updates. 
 
-Fortunately, you can manually modify the existing files (this might seem like a lot especially if you're unfamiliar with code):
+Fortunately, you can manually modify your existing local files (this might seem like a lot especially if you're unfamiliar with code):
 
 1. Open your Gargul folder in your Wow addons folder
 2. Open \Gargul\Interface\Settings\General.lua in a code editor or even notepad.
