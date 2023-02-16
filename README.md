@@ -12,12 +12,7 @@ I tried to ask the author of the addon to put this simple fix into the addon but
 
 This is very easy to implement and can be done in a few seconds, but I am not smart enough to figure out how to do this automatically any time the addon updates. 
 
-You have 2 options here: copy the files from this repository:
-1. General.lua replaces the file in \Gargul\Interface\Settings
-2. Version.lua replaces the file in \Gargul\Classes\Version.lua
-3. Download each file, copy and paste them into the above directories.
-
-Or, you can manually modify the existing files (this might seem like a lot especially if you're unfamiliar with code):
+Fortunately, you can manually modify the existing files (this might seem like a lot especially if you're unfamiliar with code):
 
 1. Open your Gargul folder in your Wow addons folder
 2. Open \Gargul\Interface\Settings\General.lua in a code editor or even notepad.
@@ -54,4 +49,6 @@ local notifyOfUpdate = function ()
 ```
 
 *What does this do?* This creates an entry in the General settings of Gargul for enabling/disabling the popup, and then the code here is modified so that if the setting is enabled, you still get the chat message telling you you're out of date but doesn't pop with the super annoying popup :)
+
+Disclaimer: Once again, this is not code, this is not a WoW addon, this is just a set of instructions created to help people disable the obnoxious popup. I didn't write Gargul, it is not mine, I am not claiming it to be mine.
 
