@@ -2,7 +2,7 @@
 
 THIS IS NOT A VERSION OF GARGUL I DID NOT WRITE GARGUL I AM NOT THE AUTHOR OF GARGUL
 
-Repository for the code that disables the Gargul addon's "update Gargul!" notification that pops up in the center of the screen and lingers for way too long.
+These are instructions on how to remove the Gargul addon's "update Gargul!" notification that pops up in the center of the screen and lingers for way too long.
 
 This code works with Gargul version 5.3.1
 
@@ -17,39 +17,27 @@ This is very easy to implement and can be done in a few seconds, but I am not sm
 
 Fortunately, you can manually modify your existing local files (this might seem like a lot especially if you're unfamiliar with code):
 
+NOTE: line numbers are current as of gargul version 5.3.3
+
 1. Open your Gargul folder in your Wow addons folder
 2. Open \Gargul\Interface\Settings\General.lua in a code editor or even notepad.
-3. Add the following object to the "Overview:drawCheckboxes" function (I personally put it above the SFX option):
+3. Copy and paste this below line 43 (aka, press enter on line 43 and paste this code there, taking note to keep the comma):
 
 ```
-{
+,{
     label = "Disable new update pop-up window",
     description = "This will hide the on-screen popup from showing when your version of Gargul is out of date",
     setting = "noUpdatePopup"}, 
 }
 ```
 4. Open \Gargul\Classes\Version.lua
-5. Copy this if statement below:
+5. Copy this if statement below after line 279 (so, hit enter on line 279 and then paste this):
 ```
 if (GL.Settings:get("noUpdatePopup")) then
   return;
 end
 ```
             
-7. In the function named "Version:notifyOfUpdate", modify the local function notifyUpdate by adding the if statement you just copied into the middle of the function as shown below:
-```
-local notifyOfUpdate = function ()
-            GL:warning("A new version of |c00a79effGargul|r is available. Make sure to update!");
-            
-            if (GL.Settings:get("noUpdatePopup")) then
-                return;
-            end
-
-            GL.Interface.Alerts:fire("GargulNotification", {
-                message = string.format("|c00BE3333Update Gargul!|r"),
-            });
-        end
-```
 
 *What does this do?* This creates an entry in the General settings of Gargul for enabling/disabling the popup, and then the code here is modified so that if the setting is enabled, you still get the chat message telling you you're out of date but doesn't pop with the super annoying popup :)
 
