@@ -41,5 +41,7 @@ end
 
 *What does this do?* This creates an entry in the General settings of Gargul for enabling/disabling the popup, and then the code here is modified so that if the setting is enabled, you still get the chat message telling you you're out of date but doesn't pop with the super annoying popup :)
 
+*are you allowed to distribute these instructions?* I sure am! https://en.wikipedia.org/wiki/Lewis_Galoob_Toys,_Inc._v._Nintendo_of_America,_Inc. precedent set in this court case allows me to not only have these instructions available but to distribute them! 
+
 Disclaimer: Once again, this is not code, this is not a WoW addon, this is just a set of instructions created to help people disable the obnoxious popup. I didn't write Gargul, it is not mine, I am not claiming it to be mine.
 
